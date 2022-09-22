@@ -21,3 +21,10 @@ Let us begin!!
 ## [Project CI/CD Pipelines](docs/project-pipelines-gitlab.md)
 
 ## [Module CI/CD Pipelines](docs/module-pipelines-gitlab.md)
+
+
+## Useful Links:
+
+Magento development guide - <https://developer.adobe.com/commerce/php/development/>
+
+Warden guide - <https://docs.warden.dev/>
