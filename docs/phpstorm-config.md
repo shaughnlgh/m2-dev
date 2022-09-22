@@ -63,7 +63,7 @@ This will add a new entry that must be updated to the following:
 | Use path mappings | Yes            |
 
 *Ensure the name matches the docker group container name, with the suffix `-docker`. If this is not set correctly, you 
-will not be able to use Xdebug correctly.*
+will not be able to use Xdebug.*
 
 Set path mappings:
 
@@ -106,7 +106,8 @@ to confirm that it is working correctly, the click `Apply` only.
 
 Click on the `PHP_CodeSniffer inspection` link located at the bottom of the modal. This will open an inspection modal 
 which should show the `PHP_CodeSniffer validation`. Ensure that the options for `Show sniff name` is checked and 
-`Installed standards path` is unchecked. __This is very important else the Magento2 codding standard will not show up.__
+`Installed standards path` is unchecked. __This is very important else the Magento2 coding standard will not show up.__
+
 For now, leave the `Coding standard` as is. Click `OK` to close the `inspections` modal, then click `Apply` and `OK` in 
 the `PHP_CodeSniffer` modal.
 
