@@ -115,8 +115,14 @@ export M2_MAGENT_REPO_PASS="pass"
 ```
 *Update where necessary*
 
+### 2. Prepare your Magento 2 project files:
 
-### 2.a. Create new Magento 2 repository:
+[Create a new Magento 2 project](#2a-create-a-new-magento-2-project)
+or
+[Use an existing Magento 2 project](#2b-use-an-existing-magento-2-project)
+
+
+#### 2.a. Create a new Magento 2 project:
 
 __Create your project directories and initialize git:__
 
@@ -236,7 +242,7 @@ EOF
 ```
 
 
-### 2.b. Use existing Magento 2 repository:
+### 2.b. Use an existing Magento 2 project:
 
 __Create your project directories and clone repository:__
 
@@ -513,6 +519,7 @@ To access the PHP-FPM container with XDEBUG, run:
 ```bash
 warden debug
 ```
+*This is super helpful when debugging crons or CLI related tasks in Magento.*
 
 
 ## Troubleshooting
