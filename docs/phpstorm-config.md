@@ -94,9 +94,17 @@ interpreter you setup previously, then click `OK`.
 ![Quality Tools 1](images/quality-tools-1.png)
 
 This should then auto resolve and populate everything for you. All you will need to do is click the `Validate` button 
-to confirm that it is working correctly, the click `Apply` and `OK`.
+to confirm that it is working correctly, the click `Apply` only.
 
 ![Quality Tools 2](images/quality-tools-2.png)
+
+Click on the `PHP_CodeSniffer inspection` link located at the bottom of the modal. This will open an inspection modal 
+which should show the `PHP_CodeSniffer validation`. Ensure that the options for `Show sniff name` is checked and 
+`Installed standards path` is unchecked. __This is very important else the Magento2 codding standard will not show up.__
+For now, leave the `Coding standard` as is. Click `OK` to close the `inspections` modal, then click `Apply` and `OK` in 
+the `PHP_CodeSniffer` modal.
+
+![Quality Tools 2](images/quality-tools-2-1.png)
 
 For `Mess Detector` click on the `...` button. This will bring up a `Mess Detector` modal. Click the `+` button to
 add new configuration. This should show another modal titled `Mess Detector By Remote Interpreter`. Select the
@@ -105,7 +113,7 @@ interpreter you setup previously, then click `OK`.
 ![Quality Tools 3](images/quality-tools-3.png)
 
 This should then auto resolve and populate everything for you. All you will need to do is click the `Validate` button
-to confirm that it is working correctly, the click `Apply` and `OK`.
+to confirm that it is working correctly, then click `Apply` and `OK`.
 
 ![Quality Tools 4](images/quality-tools-4.png)
 
@@ -113,7 +121,7 @@ Click `OK` to close the preferences window, then restart PHPStorm. When PHPStorm
 again, then go to `PHPStorm preferences > PHP > Quality Tools`.
 
 For `PHP_CodeSniffer` click on the `...` button. This will bring up a `PHP_CodeSniffer` modal that we previously 
-updated. Now on the `PHP_CodeSniffer inspection` link located at the bottom of the modal. 
+updated. Click on the `PHP_CodeSniffer inspection` link located at the bottom of the modal. 
 
 ![Quality Tools 5](images/quality-tools-5.png)
 
