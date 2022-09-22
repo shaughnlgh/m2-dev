@@ -225,6 +225,11 @@ cat > composer.json << EOF
         }
     },
     "extra": {
+        "patches": {
+            "squizlabs/php_codesniffer": {
+                "[PATCH] PHPStorm unable to run phpcs inspection": "patches/squizlabs-php-codesniffer-src-util-standards-php.patch"
+            }
+        },
         "magento-force": "override"
     },
     "scripts": {
@@ -241,6 +246,33 @@ cat > composer.json << EOF
 EOF
 ```
 
+__Create PHPCS patch file:__
+
+There is currently a known issue where PHPStorm is unable to run phpcs inspections 
+<https://github.com/magento/magento-coding-standard/issues/390>. To get around this we introduce the patch in 
+composer.json and on every composer install, the patch gets applied.
+
+```bash
+mkdir patches
+cat > patches/squizlabs-php-codesniffer-src-util-standards-php.patch << EOF
+--- /dev/null
++++ ../src/Util/Standards.php
+@@ -33,6 +33,12 @@
+         }
+ 
+         \$resolvedInstalledPaths = [];
++        \$vendorDir = dirname(dirname(dirname(dirname(__DIR__))));
++        \$phpCompatibilityDir = \$vendorDir . '/phpcompatibility/php-compatibility/PHPCompatibility';
++        if (is_dir(\$phpCompatibilityDir)) {
++            \$resolvedInstalledPaths[] = \$phpCompatibilityDir;
++        }
++
+         foreach (\$installedPaths as \$installedPath) {
+             if (substr(\$installedPath, 0, 1) === '.') {
+                 \$installedPath = Common::realPath(__DIR__.\$ds.'..'.\$ds.'..'.\$ds.\$installedPath);
+
+EOF
+```
 
 ### 2.b. Use an existing Magento 2 project:
 
