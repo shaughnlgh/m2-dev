@@ -125,25 +125,26 @@ to confirm that it is working correctly, then click `Apply` and `OK`.
 ![Quality Tools 4](images/quality-tools-4.png)
 
 Click `OK` to close the preferences window, then restart PHPStorm. When PHPStorm has restarted, open up the project 
-again, then go to `PHPStorm preferences > PHP > Quality Tools`.
+again and go to `PHPStorm preferences > PHP > Quality Tools`.
 
 For `PHP_CodeSniffer` click on the `...` button. This will bring up a `PHP_CodeSniffer` modal that we previously 
 updated. Click on the `PHP_CodeSniffer inspection` link located at the bottom of the modal. 
 
 ![Quality Tools 5](images/quality-tools-5.png)
 
-This should bring up another modal which links directly to the inspection. Ensure that the `Coding standard` is set to
-`Magento2`.
+This should bring up an `inspection` modal which links directly to the `PHP_CodeSniffer validation`. Ensure that the 
+`Coding standard` is set to `Magento2`.
 
 ![Quality Tools 6](images/quality-tools-6.png)
 
-Next, search for `PHP Mess Detector validation` in the same inspection window. Ensure it is enabled by checking the
+Next, search for the `PHP Mess Detector validation` in the same inspection window. Ensure it is enabled by checking the
 checkbox and ensure all inspection options are selected. Then click the `+` button, under `Custom rulesets` and set 
 the ruleset as `[magento_root]/dev/tests/static/testsuite/Magento/Test/Php/_files/phpmd/ruleset.xml`.
 
 ![Quality Tools 7](images/quality-tools-7.png)
 
-Next, search for `PHP CS Fixer validation` in the same inspection window. Ensure it is disabled by unchecking the
+Next, search for the `PHP CS Fixer validation` in the same inspection window. Ensure it is disabled by unchecking the
 checkbox.
 
-Click `OK` to close the inspection window. Click `Apply` and `OK` in the `PHP_CodeSniffer` modal.
+Click `OK` to close the inspection window. Click `Apply` and `OK` to close the `PHP_CodeSniffer` modal.
+
