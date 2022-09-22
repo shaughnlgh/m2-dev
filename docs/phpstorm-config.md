@@ -14,12 +14,15 @@ configurations. Follow all the steps set provided in that documentation.
 
 Go to `PHPStorm preferences > PHP` and click the `...` button (next to CLI interpreter) to bring up another
 configuration modal.
+
 ![CLI interpreter modal](images/cli-int-modal.png)
 
 This should bring up a CLI interpreters modal. In the top right of the modal, click the `+` to add a new CLI interpreter.
+
 ![CLI interpreter modal 2](images/cli-int-modal-2.png)
 
 This should show a select, choose `Docker`.
+
 ![CLI interpreter modal 3](images/cli-int-modal-3.png)
 
 This will bring up another modal titled `Configure Remote PHP interpreter`. Add the following:
@@ -33,16 +36,19 @@ This will bring up another modal titled `Configure Remote PHP interpreter`. Add 
 ![CLI interpreter modal 4](images/cli-int-modal-4.png)
 
 Click `OK`. This will close the current modal and display the relevant interpreter info. You can choose a new name or leave default.
+
 ![CLI interpreter modal 5](images/cli-int-modal-5.png)
 
 Click `Apply`, then `OK`. This will close the current modal and display the relevant PHP configurations.
 Update the `PHP language level` to `8.1`, then click `Apply`.
+
 ![CLI interpreter modal 6](images/cli-int-modal-6.png)
 
 
 ## Add PHP Server:
 
 Go to `PHPStorm preferences > PHP > Servers` and click the `+` button to add a new server.
+
 ![PHP server](images/php-server.png)
 
 This will add a new entry that must be updated to the following:
