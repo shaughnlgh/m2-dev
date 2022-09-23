@@ -17,6 +17,14 @@ Warden will build your project with the following containers:
 - RabbitMQ
 - Redis
 
+In each section, I will try to provide as much detail as possible, and guide you through the installation / setup steps.
+It is possible to include a shell script in order to make the setup easier, however we will keep them separate for 
+this guide.
+
+In the end, we should end up with a working Magento 2.4.5 installation, running on:
+- MySQL 8
+- PHP 8.1 with Xdebug 3, Composer 2 and n98-magerun
+
 
 ## Table of contents:
 
