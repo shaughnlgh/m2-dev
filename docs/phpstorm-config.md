@@ -36,6 +36,7 @@ I recommend the following PHPStorm plugins.
 - Rainbow CSV
 - Magicento 2 (Not free)
 - Symfony Support
+- Php Inspections (EA Extended)
 
 Also ensure you enable some of the bundled plugins like:
 
